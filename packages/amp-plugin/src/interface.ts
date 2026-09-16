@@ -1,4 +1,4 @@
-import { IBaseConfig } from '@yuafox/easepick2-base-plugin';
+import type { IBaseConfig } from '@yuafox/easepick2-base-plugin';
 
 export interface IAmpPlugin extends IBaseConfig {
   dropdown?: {

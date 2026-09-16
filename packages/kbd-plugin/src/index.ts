@@ -1,6 +1,6 @@
-import { BasePlugin, IEventDetail, IPlugin } from '@yuafox/easepick2-base-plugin';
+import { BasePlugin, type IEventDetail, type IPlugin } from '@yuafox/easepick2-base-plugin';
 import { RangePlugin } from '@yuafox/easepick2-range-plugin';
-import { IKbdPlugin } from './interface';
+import type { IKbdPlugin } from './interface';
 import './index.scss';
 
 export class KbdPlugin extends BasePlugin implements IPlugin {

@@ -1,5 +1,5 @@
 import { Core } from '@yuafox/easepick2-core';
-import { IBaseConfig, IPlugin, IEventDetail } from './interface';
+import type { IBaseConfig, IPlugin, IEventDetail } from './interface';
 
 export class BasePlugin {
   public picker: Core;

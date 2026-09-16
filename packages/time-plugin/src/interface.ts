@@ -1,5 +1,5 @@
-import { DateTime } from '@yuafox/easepick2-datetime';
-import { IBaseConfig } from '@yuafox/easepick2-base-plugin';
+import type { DateTime } from '@yuafox/easepick2-datetime';
+import type { IBaseConfig } from '@yuafox/easepick2-base-plugin';
 
 export interface ITimeConfig extends IBaseConfig {
   native?: boolean;

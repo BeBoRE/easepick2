@@ -1,8 +1,8 @@
-import { BasePlugin, IEventDetail, IPlugin } from '@yuafox/easepick2-base-plugin';
+import { BasePlugin, type IEventDetail, type IPlugin } from '@yuafox/easepick2-base-plugin';
 import { LockPlugin } from '@yuafox/easepick2-lock-plugin';
 import { RangePlugin } from '@yuafox/easepick2-range-plugin';
 import { DateTime } from '@yuafox/easepick2-datetime';
-import { IAmpPlugin } from './interface';
+import type { IAmpPlugin } from './interface';
 import './index.scss';
 
 export class AmpPlugin extends BasePlugin implements IPlugin {

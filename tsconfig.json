@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "outDir": "dist",
-    "module": "esnext",
+    "module": "preserve",
     "target": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "emitDeclarationOnly": true,
     "composite": true,
+    "verbatimModuleSyntax": true,
     "paths": {
       "@yuafox/easepick2-*": [
         "./packages/*/src/index.ts"
       ]
-    }
+    },
+    "types": ["node"]
   },
   "exclude": [
     "node_modules",

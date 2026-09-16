@@ -1,7 +1,7 @@
 import Calendar from './calendar';
 import { DateTime } from '@yuafox/easepick2-datetime';
 import PluginManager from './pluginManager';
-import {
+import type {
   IEventDetail,
   IPickerConfig,
   IPickerElements,

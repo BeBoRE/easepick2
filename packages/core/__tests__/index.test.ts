@@ -1,19 +1,20 @@
 import { DateTime } from '@yuafox/easepick2-datetime';
 import { RangePlugin } from '@yuafox/easepick2-range-plugin';
+import {vi, test, expect} from 'vitest';
 import * as easepick from '../src/index';
-const pkg = require('../package.json');
+import pkg from '../package.json';
 
 // 23 Nov, 2019 - repository creation date
 const date = new DateTime(new Date(2019, 10, 23, 0, 0, 0, 0));
 
-window.matchMedia = jest.fn().mockImplementation((query) => {
+window.matchMedia = vi.fn().mockImplementation((query) => {
   return {
     matches: false,
     media: query,
     onchange: null,
-    addEventListener: jest.fn(),
-    removeEventListener: jest.fn(),
-    dispatchEvent: jest.fn(),
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+    dispatchEvent: vi.fn(),
   };
 });
 window['__VERSION__'] = pkg.version;

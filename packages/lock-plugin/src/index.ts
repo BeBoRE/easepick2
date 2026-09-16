@@ -1,6 +1,6 @@
 import { DateTime } from '@yuafox/easepick2-datetime';
-import { BasePlugin, IEventDetail, IPlugin } from '@yuafox/easepick2-base-plugin';
-import { ILockConfig } from './interface';
+import { BasePlugin, type IEventDetail, type IPlugin } from '@yuafox/easepick2-base-plugin';
+import type { ILockConfig } from './interface';
 import './index.scss';
 
 export class LockPlugin extends BasePlugin implements IPlugin {

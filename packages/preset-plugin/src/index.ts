@@ -1,6 +1,6 @@
 import { DateTime } from '@yuafox/easepick2-datetime';
 import { BasePlugin, IEventDetail, IPlugin } from '@yuafox/easepick2-base-plugin';
-import { IPresetConfig } from './interface';
+import type { IPresetConfig } from './interface';
 import './index.scss';
 
 export class PresetPlugin extends BasePlugin implements IPlugin {

@@ -4,17 +4,9 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "dist",
-    "declarationDir": ".",
+    "declarationDir": "dist",
   },
   "include": [
     "src/**/*"
   ],
-  "references": [
-    {
-      "path": "../datetime"
-    },
-    {
-      "path": "../base-plugin"
-    }
-  ]
 }

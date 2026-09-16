@@ -1,5 +1,5 @@
-import { DateTime } from '@yuafox/easepick2-datetime';
-import { Core } from './core';
+import type { DateTime } from '@yuafox/easepick2-datetime';
+import type { Core } from './core';
 
 export interface IEventDetail {
   view?: string;
