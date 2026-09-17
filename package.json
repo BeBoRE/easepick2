@@ -23,7 +23,7 @@
     "dev": "tsdown --watch",
     "prod": "tsdown --minify",
     "clean:build": "rm -rf packages/*/dist",
-    "test": "vitest --environment happy-dom --run"
+    "test": "vitest --run"
   },
   "workspaces": [
     "packages/*"
@@ -39,5 +39,8 @@
   "homepage": "https://github.com/YuaFox/easepick2",
   "bugs": {
     "url": "https://github.com/YuaFox/easepick2/issues"
+  },
+  "dependencies": {
+    "@vitest/browser-playwright": "^5.0.1"
   }
 }
