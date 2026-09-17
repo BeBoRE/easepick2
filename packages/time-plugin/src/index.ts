@@ -478,6 +478,7 @@ export class TimePlugin extends BasePlugin implements IPlugin {
     const hSelect = document.createElement('select');
     hSelect.className = 'time-plugin-custom-input unit';
     hSelect.name = `${name}[HH]`;
+    hSelect.ariaLabel = this.rangePlugin ? `${name} hour` : 'hour';
     const hStart = this.options.format12 ? 1 : 0;
     const hLimit = this.options.format12 ? 13 : 24;
     let date = null;
@@ -511,6 +512,7 @@ export class TimePlugin extends BasePlugin implements IPlugin {
     const mSelect = document.createElement('select');
     mSelect.className = 'time-plugin-custom-input unit';
     mSelect.name = `${name}[mm]`;
+    mSelect.ariaLabel = this.rangePlugin ? `${name} minute` : 'minute';
     const mLimit = 60;
 
     for (let i = 0; i < mLimit; i += this.options.stepMinutes) {

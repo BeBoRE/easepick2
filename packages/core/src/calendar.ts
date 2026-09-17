@@ -279,7 +279,7 @@ export default class Calendar {
     for (let m = 0; m < 12; m++) {
       const monthDate = new DateTime(new Date(date.getFullYear(), m, 1));
 
-      const monthEl = document.createElement('div');
+      const monthEl = document.createElement('button');
       monthEl.className = 'month unit';
       monthEl.innerHTML = monthDate.toLocaleString(this.picker.options.lang, { month: 'short' });
       monthEl.dataset.time = String(monthDate.getTime());
@@ -324,7 +324,7 @@ export default class Calendar {
     for (let y = decadeStart; y < decadeStart + 12; y++) {
       const yearDate = new DateTime(new Date(y, 0, 1));
 
-      const yearEl = document.createElement('div');
+      const yearEl = document.createElement('button');
       yearEl.className = 'year unit';
       yearEl.innerHTML = String(y);
       yearEl.dataset.time = String(yearDate.getTime());
@@ -427,7 +427,7 @@ export default class Calendar {
     const optionsDate = this.picker.options.date ? new DateTime(this.picker.options.date) : null;
     const today = new DateTime();
 
-    const element = document.createElement('div');
+    const element = document.createElement('button');
     element.className = 'day unit';
     element.innerHTML = date.format('D');
     element.dataset.time = String(date.getTime());

@@ -130,6 +130,7 @@
     min-height: var(--day-height);
     max-height: var(--day-height);
 
+    background-color: transparent;
     &:hover {
       border: 1px solid var(--color-fg-primary);
       color: var(--color-fg-primary);
@@ -163,6 +164,7 @@
       border-radius: 2px;
       font-size: 13px;
 
+      background-color: transparent;
       &:hover {
         border: 1px solid var(--color-fg-primary);
         color: var(--color-fg-primary);
